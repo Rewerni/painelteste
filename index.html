@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Chamada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@700&family=Inter:wght@800;900&family=Manrope:wght@500;700;800;900&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen-shell">
+        <div class="screen-card">
+            <main class="layout-grid">
+                <aside class="assist-panel" aria-label="Acompanhamento de posicao">
+                    <div class="assist-card">
+                        <h2>ACOMPANHA SUA<br>POSIÇÃO</h2>
+
+                        <div class="assist-qr">
+                            <img src="images2/qr-code.png" alt="QR Code para acompanhar posição">
+                        </div>
+
+                        <div class="assist-libras">
+                            <span class="material-symbols-outlined">sign_language</span>
+                            <span>LIBRAS</span>
+                        </div>
+
+                        <img class="assist-character" src="images2/libras.png" alt="Personagem de apoio em Libras">
+                    </div>
+                </aside>
+
+                <section class="hero-panel" aria-label="Chamada atual">
+                    <div class="hero-label">
+                        <span class="material-symbols-outlined">notifications_active</span>
+                        <span>SENHA DE CHAMADA</span>
+                    </div>
+
+                    <div class="hero-ticket" id="active-ticket">A011</div>
+                    <h1 class="hero-name" id="active-patient">FELIPE SILVA</h1>
+
+                    <div class="hero-pills">
+                        <div class="info-pill">
+                            <span class="material-symbols-outlined">meeting_room</span>
+                            <strong id="active-room">SALA 04</strong>
+                        </div>
+                        <div class="pill-divider" aria-hidden="true"></div>
+                        <div class="info-pill success">
+                            <span class="material-symbols-outlined">medical_services</span>
+                            <strong id="active-specialty">AMBULATORIAL</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="history-panel" aria-label="Ultimos chamados">
+                    <div class="history-clock-card" aria-label="Horário atual">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <span id="sidebar-time">00:00</span>
+                    </div>
+
+                    <header class="history-header">
+                        <div class="history-title">
+                            <span class="material-symbols-outlined">history</span>
+                            <h2>ÚLTIMOS CHAMADOS</h2>
+                        </div>
+                    </header>
+
+                    <div class="history-list">
+                        <article class="history-card">
+                            <div class="history-card-main">
+                                <div class="history-row">
+                                    <strong class="history-code">A010</strong>
+                                    <span class="history-room">SALA 02</span>
+                                </div>
+                                    <p class="history-name">MARIA SOUZA</p>
+                            </div>
+                            <div class="history-time">
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span>10:48</span>
+                            </div>
+                        </article>
+
+                        <article class="history-card highlight">
+                            <div class="history-card-main">
+                                <div class="history-row">
+                                    <strong class="history-code">B005</strong>
+                                    <span class="history-room">SALA 03</span>
+                                </div>
+                                    <p class="history-name">JOSÉ ABREU</p>
+                            </div>
+                            <div class="history-time">
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span>10:48</span>
+                            </div>
+                        </article>
+
+                        <article class="history-card">
+                            <div class="history-card-main">
+                                <div class="history-row">
+                                    <strong class="history-code">A009</strong>
+                                    <span class="history-room">SALA 06</span>
+                                </div>
+                                    <p class="history-name">ABRAÃO LIMA</p>
+                            </div>
+                            <div class="history-time">
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span>10:48</span>
+                            </div>
+                        </article>
+
+                        <article class="history-card">
+                            <div class="history-card-main">
+                                <div class="history-row">
+                                    <strong class="history-code">A008</strong>
+                                    <span class="history-room">SALA 05</span>
+                                </div>
+                                    <p class="history-name">JOÃO MIGUEL</p>
+                            </div>
+                            <div class="history-time">
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span>10:48</span>
+                            </div>
+                        </article>
+                    </div>
+                </aside>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer-ticker" aria-label="Avisos do painel">
+        <div class="footer-ticker__label">AVISO</div>
+        <div class="footer-ticker__viewport">
+            <div class="footer-ticker__track">
+                <span class="footer-ticker__item">DIRIJA-SE À SALA INDICADA APÓS O CHAMADO</span>
+                <span class="footer-ticker__dot">•</span>
+                <span class="footer-ticker__item">MANTENHA ATENÇÃO AO PAINEL E AO SINAL SONORO</span>
+                <span class="footer-ticker__dot">•</span>
+                <span class="footer-ticker__item">O ATENDIMENTO SEGUE A ORDEM DAS SENHAS E AS PRIORIDADES PREVISTAS EM LEI</span>
+                <span class="footer-ticker__dot">•</span>
+                <span class="footer-ticker__item">EM CASO DE DÚVIDAS, PROCURE A EQUIPE DE RECEPÇÃO</span>
+                <span class="footer-ticker__dot">•</span>
+                <span class="footer-ticker__item footer-ticker__date">HOJE É --</span>
+            </div>
+            <div class="footer-ticker__track" aria-hidden="true">
+                <span class="footer-ticker__item">DIRIJA-SE À SALA INDICADA APÓS O CHAMADO</span>
+                <span class="footer-ticker__dot">•</span>
+                <span class="footer-ticker__item">MANTENHA ATENÇÃO AO PAINEL E AO SINAL SONORO</span>
+                <span class="footer-ticker__dot">•</span>
+                <span class="footer-ticker__item">O ATENDIMENTO SEGUE A ORDEM DAS SENHAS E AS PRIORIDADES PREVISTAS EM LEI</span>
+                <span class="footer-ticker__dot">•</span>
+                <span class="footer-ticker__item">EM CASO DE DÚVIDAS, PROCURE A EQUIPE DE RECEPÇÃO</span>
+                <span class="footer-ticker__dot">•</span>
+                <span class="footer-ticker__item footer-ticker__date">HOJE É --</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sr-only" aria-hidden="true">
+        <span id="current-time">00:00</span>
+        <span id="current-date">--/--/----</span>
+    </div>
+
+    <button id="btn-audio" onclick="ativarAudio()" aria-label="Ativar ou desativar audio">
+        <span class="material-symbols-outlined">volume_up</span>
+    </button>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
