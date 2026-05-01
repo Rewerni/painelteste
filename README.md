@@ -4,6 +4,8 @@ O painel foi ajustado como sugestão para a fase de prototipação do sistema da
 
 A ideia principal foi organizar a tela para que a chamada atual fique mais clara e mais fácil de perceber à distância.
 
+Link: https://rewerni.github.io/painelteste/
+
 ## Ideia geral
 
 No centro da tela, pensei em deixar a senha atual bem destacada, com tamanho grande, junto com o nome da pessoa chamada e a sala de destino. A intenção foi fazer com que a informação principal seja a primeira coisa que qualquer pessoa veja.
